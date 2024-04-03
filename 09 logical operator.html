@@ -1,0 +1,18 @@
+<body>
+    <h1 id='result1'>
+    </h1>
+    <h1 id="result2">
+    </h1>
+    <h1 id="result3">
+    </h1>
+</body>
+<script>
+    var x = false;
+    var y = true;
+    var z = x && y;
+    var a = x || y;
+    var b = x == y ? "same" : "not same";
+    document.getElementById('result1').innerHTML = z;
+    document.getElementById('result2').innerHTML = a;
+    document.getElementById('result3').innerHTML = b;
+</script>

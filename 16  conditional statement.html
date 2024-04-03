@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div> Enter your age : </div>
+    <input type="number" id="age"> </input>
+    <br>
+    <br>
+    <button onclick="checkage()"> Check </button>
+    <br>
+    <br>
+    <input id='result' readonly="">
+
+
+
+</body>
+<script>
+    function checkage() {
+        var x = document.getElementById("age").value;
+        if (x > 18) {
+            document.getElementById("result").value = "you can vote !"
+
+        } else if (x < 18) {
+            var y = 18 - x;
+            document.getElementById("result").value = "you can not vote after" + y + " years !";
+        }
+    }
+</script>
+
+</html>
